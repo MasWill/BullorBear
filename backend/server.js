@@ -1,6 +1,6 @@
 require('dotenv').config()
 const express = require('express')
-const stonk = require('./stonk')
+const stonk = require('./routes/stonk')
 
 
 // Express app
