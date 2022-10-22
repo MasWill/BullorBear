@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const stonk = require('./stonk')
 
 
 // Express app
@@ -20,6 +21,6 @@ app.use((req, res, next) => {
 // This code below handles how our server responds to certain requests
 
 // Register all requests under this path
-app.use('/api/workouts', workoutRoutes)
+app.use('/api/stonk', stonk)
 
 process.env
