@@ -11,7 +11,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/playing" element={<Playing />} />
-                <Route path="/lose" element={<Lose />} />
+                <Route path="/lose/:score" element={<Lose />} />
             </Routes>
         </BrowserRouter>
     </div>
