@@ -22,8 +22,8 @@ function App() {
         });
         return;
     }
-
-
+  }
+  
   return (
     <div> 
         <BrowserRouter>
