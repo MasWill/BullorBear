@@ -1,4 +1,4 @@
-import './index.css';
+import './styles/index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './pages/Main';
 import Playing from './pages/Playing';
