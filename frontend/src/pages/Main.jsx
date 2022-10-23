@@ -1,5 +1,5 @@
 import React from 'react'
-import Stonk from '../assets/stonk.jpg'
+import Stonk from '../assets/stonk.png'
 import '../index.css';
 
 const Main = () => {
