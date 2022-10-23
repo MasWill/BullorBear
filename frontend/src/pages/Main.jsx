@@ -1,5 +1,5 @@
 import React from 'react'
-import '../sytles/index.css';
+import '../styles/index.css';
 import { useNavigate } from "react-router-dom";
 
 const Main = () => {
