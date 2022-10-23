@@ -1,6 +1,6 @@
 require('dotenv').config()
 const request = require('request');
-var tickers = ['IBM', 'AAPL', 'TSLA']
+var tickers = ['IBM', 'AAPL', 'TSLA', 'WMT', 'AMZN', 'GOOG', 'GOOGL', 'BLK']
 
 // list of stonks
 const getStonks = async (req,res) => {
@@ -10,13 +10,16 @@ const getStonks = async (req,res) => {
   }
   */
 
-  
-  const url = 'https://api.twelvedata.com/price?symbol=' + tickers.at(-1).toString() + '&apikey=' + process.env.API_KEY.toString();
+  console.log(req)
+
+  const tdurl = 'https://api.twelvedata.com/price?symbol=' + tickers.at(-1) + '&apikey=' + process.env.API_KEY.toString();
+  let tick = tickers.at(-1)
   tickers.pop()
   console.log('Tickers: ', tickers)
-
+  
+  var apidata;
   request.get({
-    url: url,
+    url: tdurl,
     json: true,
     headers: {'User-Agent': 'request'}
   }, (err, res, data) => {
@@ -27,25 +30,14 @@ const getStonks = async (req,res) => {
     } else {
       // data is successfully parsed as a JSON object:
       console.log(data);
+      apidata = data;
     }
-  });
-}
 
-/*
-req.get({
-  url: url,
-  json: true,
-  headers: {'User Agent': 'request'}
-}, (err,res,data) => {
-  if(err) {
-      console.log(err);
-  } else if(res.statusCode != 200) {
-      console.log('Status: ', res.statusCode)
-  } else {
-      console.log(data)
-  }
-});
-*/
+  });
+
+  res.json(apidata)
+  
+}
 
 module.exports = getStonks
 
