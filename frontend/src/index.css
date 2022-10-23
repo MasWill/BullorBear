@@ -14,7 +14,16 @@ code {
 
 .main-content {
   font-family: 'Press Start 2P';
-  
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-bg-image {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-title {
@@ -23,14 +32,11 @@ code {
   left: 139px;
   top: 353px;
 
-  font-style: normal;
-  font-weight: 400;
   font-size: 96px;
   line-height: 96px;
   text-align: center;
 
   color: #05FF00;
-
   border: 3px solid #FFFFFF;
 }
 
@@ -40,8 +46,6 @@ code {
   left: 224px;
   top: 505px;
 
-  font-style: normal;
-  font-weight: 400;
   font-size: 32px;
   line-height: 32px;
   /* identical to box height */
@@ -53,33 +57,4 @@ code {
 .main-play-button {
   width: 338px;
   height: 61.67px;
-  /* left: 551px;
-  top: 613px; */
-}
-
-.playing-titles{
-
-  font-family: 'Press Start 2P';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-
-  color: #FFFFFF;
-}
-
-.higher-lowerbtn{
-  box-sizing: border-box;
-
-  position: relative;
-  width: 206px;
-  height: 89px;
-  left: 617px;
-  top: 469px;
-
-  background: #262EE6;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;  
 }
