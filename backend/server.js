@@ -23,4 +23,9 @@ app.use((req, res, next) => {
 // Register all requests under this path
 app.use('/api/stonk', stonk)
 
+
+app.listen(process.env.PORT, () => {
+    console.log('listening for requests on port', process.env.PORT)
+});
+
 process.env

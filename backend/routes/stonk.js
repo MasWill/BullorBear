@@ -8,3 +8,5 @@ const router = express.Router()
 
 // GET all workouts
 router.get('/', getStonks)
+
+module.exports = router
