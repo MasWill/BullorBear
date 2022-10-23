@@ -35,7 +35,6 @@ app.get('/stonk', async (req,res) => {
     const request = await fetch('https://api.twelvedata.com/price?symbol=' + tickers.at(-1) + '&apikey=' + process.env.API_KEY.toString());
     const data = await request.json();
     let tick = tickers.at(-1);
-    tickers.pop()
     console.log('Tickers: ', tickers)
     console.log(data)
 

@@ -5,3 +5,8 @@
     top: 50%;
     left: 50%;
 }
+
+.lose-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
