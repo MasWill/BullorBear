@@ -15,7 +15,7 @@ code {
 }
 
 .main-content {
-  background-image: url(./assets/stonk.jpg);
+  background-image: url(../assets/stonk.jpg);
   
   background-size: cover;
   min-height: 100vh;
@@ -33,33 +33,8 @@ code {
   display: inline-block;
   font-size: 96px;
   line-height: 96px;
-  text-align: center;
 
-  color: #05FF00;
-  border: 3px solid #ffffff;
-}
-
-.main-question {
-  width: 992px;
-  height: 32px;
-  left: 224px;
-  top: 505px;
-
-  font-size: 32px;
-  line-height: 32px;
-  /* identical to box height */
-  text-align: center;
-
-  color: #ffffff;
-}
-
-.main-play-button {
-  width: 338px;
-  height: 61.67px;
-}
-
-.bob {
-  text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
   margin-left: 13px;
   margin-right: 13px;
+  text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
 }
