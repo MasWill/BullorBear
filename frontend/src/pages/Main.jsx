@@ -1,7 +1,6 @@
 import React from 'react'
-
-
-import '../index.css';
+import '../sytles/index.css';
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
     const navigate = useNavigate();
