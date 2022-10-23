@@ -1,4 +1,5 @@
-import '../styles/playing.css';
+import './styles/index.css';
+import './styles/playing.css';
 import React from 'react'
 
 const Playing = () => {
@@ -7,10 +8,11 @@ const Playing = () => {
             <div className='playing-center'> mayybe </div>
             <div className='row'>
                 <div className='playing-bg'>
-                    yes
+                    <p className="text-light" style={{fontSize:"32px"}}>has</p>
+                    <p className="text-light" style={{fontSize:"32px"}}></p>
                 </div>
                 <div className='playing-bg-2'>
-                    no
+                    <p className="text-light" style={{fontSize:"32px"}}>is</p>
                 </div>
             </div>
             
