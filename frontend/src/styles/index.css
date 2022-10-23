@@ -15,7 +15,7 @@ code {
 }
 
 .main-content {
-  background-image: url(../assets/stonk.jpg);
+  background-image: url(../assets/stonk.png);
   
   background-size: cover;
   min-height: 100vh;
@@ -38,21 +38,6 @@ code {
   margin-right: 13px;
 }
 
-.main-play-button {
-  width: 338px;
-  height: 61.67px;
-}
-
-.main-question {
-  width: 992px;
-  height: 32px;
-  left: 224px;
-  top: 505px;
-
-  font-size: 32px;
-  line-height: 32px;
-  /* identical to box height */
-  text-align: center;
-
-  color: #ffffff;
+.btn:hover {
+  opacity: 0.5;
 }
