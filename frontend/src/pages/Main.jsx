@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 const Main = () => {
     const navigate = useNavigate();
+
+    
     return (
         <div className="d-flex flex-column align-items-center justify-content-center main-content">
             <div className="main-title">
