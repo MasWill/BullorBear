@@ -14,15 +14,8 @@ code {
     monospace;
 }
 
-/* .bg-img {
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
 .main-content {
-  background-image: url(./assets/stonk.jpg);
+  background-image: url(../assets/stonk.jpg);
   
   background-size: cover;
   min-height: 100vh;
@@ -40,10 +33,14 @@ code {
   display: inline-block;
   font-size: 96px;
   line-height: 96px;
-  text-align: center;
+  text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
+  margin-left: 13px;
+  margin-right: 13px;
+}
 
-  color: #05FF00;
-  border: 3px solid #ffffff;
+.main-play-button {
+  width: 338px;
+  height: 61.67px;
 }
 
 .main-question {
@@ -58,15 +55,4 @@ code {
   text-align: center;
 
   color: #ffffff;
-}
-
-.main-play-button {
-  width: 338px;
-  height: 61.67px;
-}
-
-.bob {
-  text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
-  margin-left: 13px;
-  margin-right: 13px;
 }

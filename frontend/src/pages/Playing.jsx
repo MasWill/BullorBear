@@ -1,5 +1,5 @@
-import '../index.css';
-import '../playing_page.css'
+import './styles/index.css';
+import './styles/playing.css';
 import React from 'react'
 
 const Playing = () => {
