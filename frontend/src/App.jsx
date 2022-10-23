@@ -7,7 +7,21 @@ import { useEffect, useState } from "react"
 
 function App() {
 
+  function startGame() {
 
+  }
+
+  function onVote(vote) {
+    if (!left || !right) return;
+
+    if ((vote == 1 && right.popularity >= left.popularity) || (vote == -1 && right.popularity <= left.popularity)) {
+        fetchRandomAnime().then(data => {
+            setLeft(right);
+            setRight(data);
+            setScore(score + 1);
+        });
+        return;
+    }
 
 
   return (
