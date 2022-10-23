@@ -3,14 +3,20 @@ import React from 'react'
 
 const Playing = () => {
     return (
-        <div>
-            <p>High Score: </p>
-            <p>Score: </p>
-            <button className="higher-lowerbtn">Higher</button>
-            <button className="higher-lowerbtn">Lower</button>
-
+        <div className='playing-content'>
+            <div className='playing-center'> mayybe </div>
+            <div className='row'>
+                <div className='playing-bg'>
+                    yes
+                </div>
+                <div className='playing-bg-2'>
+                    no
+                </div>
+            </div>
             
         </div>
+        
+
     )
 }
 
