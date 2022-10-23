@@ -1,13 +1,13 @@
-import React from 'react'
+import { useParams } from "react-router-dom";
 
 const Lose = () => {
+    const { score } = useParams();
     return (
         <div>
-            {/* <img src="" alt="" /> */}
-            <h1>You Lose! <br /> Final Score: </h1>
-            <button>Play again</button>
+            <h1>You Lose! <br />  Final Score: { score }</h1>
+            <button>Play again!</button>
         </div>
-    )
+     );
 }
-
-export default Lose
+ 
+export default Lose;
