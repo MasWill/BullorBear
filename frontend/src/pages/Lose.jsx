@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import LoseBG from '../assets/lose-bg.png';
 import { Link, Router } from "react-router-dom";
 
 const Lose = () => {
-    //const { score } = useParams();
+    // const { score } = useParams();
     // const [highScore, setHighScore] = useState(0, ()=> {
     //     const local = localStorage.getItem('highScore');
     //     return local ? JSON.parse(local) : 0;

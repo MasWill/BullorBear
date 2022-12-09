@@ -1,10 +1,8 @@
-import React from 'react'
-import '../styles/index.css';
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 
 const Main = () => {
     const navigate = useNavigate();
-
     
     return (
         <div className="d-flex flex-column align-items-center justify-content-center main-content">
@@ -20,4 +18,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Main;
