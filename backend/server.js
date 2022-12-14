@@ -1,13 +1,13 @@
 require('dotenv').config();
+const cors = require("cors");
 const express = require('express');
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 var tickers = ['IBM', 'AAPL', 'TSLA', 'WMT', 'AMZN', 'GOOG', 'GOOGL', 'BLK'];
 
-
 // Express app
 const app = express();
-
+app.use(cors());
 // ---Middleware---
 
 // Any request sent to the server, it attaches it and patches it to the request object

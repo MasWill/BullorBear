@@ -1,12 +1,36 @@
-.lose-info {
+.lose {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) , url(../assets/cursed.jpg);
+    background-size: cover;
+    min-height: 100vh;
     font-family: 'Press Start 2P';
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    background-blend-mode: darken;
+}
+
+.final-score {
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    font-size: 3rem;
+}
+
+.score {
+    color: #FF0000;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.lose p {
+    font-size: 2.6rem;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
 .lose-btn {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 1.8rem;
+    padding: 0.1em 1em;
+}
+
+.lose-btn:hover {
+    opacity: 0.5;
 }

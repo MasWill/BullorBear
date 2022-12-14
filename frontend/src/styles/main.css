@@ -14,29 +14,31 @@ code {
     monospace;
 }
 
-.main-content {
+.main {
   background-image: url(../assets/stonk.png);
   background-size: cover;
   min-height: 100vh;
   font-family: 'Press Start 2P';
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-}
-
-.main-title {
-  display: inline-block;
 }
 
 .title {
   display: inline-block;
-  font-size: 96px;
-  line-height: 96px;
-  text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
-  margin-left: 13px;
-  margin-right: 13px;
+  font-size: 5rem;
+  text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
 }
 
-.btn:hover {
+.bull {
+  color: #05FF00;
+}
+
+.bear {
+  color: #FF0000;
+}
+
+.main-btn {
+  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+.main-btn:hover {
   opacity: 0.5;
 }

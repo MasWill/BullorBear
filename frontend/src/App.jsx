@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './pages/Main';
 import Playing from './pages/Playing';
@@ -12,7 +11,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/playing" element={<Playing />} />
-                <Route path="/lose/:score" element={<Lose />} />
+                <Route path="/lose" element={<Lose />} />
             </Routes>
         </BrowserRouter>
     </div>
