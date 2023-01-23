@@ -3,9 +3,6 @@ const express = require('express');
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const fs = require('fs')
 
-//var tickers = ['IBM', 'AAPL', 'TSLA', 'WMT', 'AMZN', 'GOOG', 'GOOGL', 'BLK'];
-
-
 // Express app
 const app = express();
 
@@ -41,12 +38,8 @@ app.get('/api/get_random_stonks', async (req,res) => {
         const data = await request.json();
         console.log('Curr Ticker: ', tick)
         console.log(data)
-        //const { tickr , price } = data;
         rand_stonks.stonks.push({name : stonk_name, ticker : tick, price : data.price})
     }
-    
-
-    //const { tick , price } = data;
 
     res.json(rand_stonks);
     
@@ -65,10 +58,6 @@ app.get('/api/get_random_stonk', async (req,res) => {
     const request = await fetch('https://api.twelvedata.com/price?symbol=' + ticker.tick + '&apikey=' + process.env.API_KEY.toString());
     const data = await request.json();
     let tickr = ticker.tick;
-    //console.log('Tickers: ', tickers)
-    //console.log(data)
-
-    //const { tick , price } = data;
 
     res.json({tick : tickr, price : data.price});
 
