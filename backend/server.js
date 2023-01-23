@@ -27,11 +27,6 @@ app.use((req, res, next) => {
 // app.use('/api/stonk', stonk)
 
 app.get('/api/get_random_stonks', async (req,res) => {
-    /*
-    if (tickers.length > 1) {
-      array.sort((a, b) => 0.5 - Math.random());
-    }
-    */
 
     const tickers = create_stonk_list();
 
@@ -57,27 +52,27 @@ app.get('/api/get_random_stonks', async (req,res) => {
     
 });
 
-// app.get('/get_stonk', async (req,res) => {
-//     /*
-//     if (tickers.length > 1) {
-//       array.sort((a, b) => 0.5 - Math.random());
-//     }
-//     */
-//     const stonk = req.params {stonk}
-//
-//     const request = await fetch('https://api.twelvedata.com/price?symbol=' + tickers.at(-1) + '&apikey=' + process.env.API_KEY.toString());
-//     const data = await request.json();
-//     let tick = tickers.at(-1);
-//     console.log('Tickers: ', tickers)
-//     console.log(data)
+app.get('/api/get_random_stonk', async (req,res) => {
 
-//     //const { tick , price } = data;
+   //const tickers = create_stonk_list();
+   let raw = fs.readFileSync('./assets/ticker_data.json');
+   let ticker_data = JSON.parse(raw);
 
-//     res.json({tick : tick, price : data.price});
+    const index = getRndInteger(0,20733)
 
+    const ticker = ticker_data[index.toString()]
 
-    
-// });
+    const request = await fetch('https://api.twelvedata.com/price?symbol=' + ticker.tick + '&apikey=' + process.env.API_KEY.toString());
+    const data = await request.json();
+    let tickr = ticker.tick;
+    //console.log('Tickers: ', tickers)
+    //console.log(data)
+
+    //const { tick , price } = data;
+
+    res.json({tick : tickr, price : data.price});
+
+});
 
 function create_stonk_list() {
     let raw = fs.readFileSync('./assets/ticker_data.json');
